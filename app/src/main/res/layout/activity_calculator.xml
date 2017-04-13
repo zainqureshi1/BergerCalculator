@@ -23,7 +23,7 @@
         android:gravity="center"
         android:layout_weight="2.31">
 
-        <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Bold
+        <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Bold
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -56,7 +56,7 @@
             android:background="@color/color_bg"
             android:gravity="center">
 
-            <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
+            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Paint "
@@ -70,7 +70,7 @@
                 android:layout_marginRight="5dp"
                 android:layout_weight="2.1" />
 
-            <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Medium
+            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Medium
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/paint_name"
@@ -100,7 +100,7 @@
             android:background="@color/color_bg"
             android:gravity="center">
 
-            <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
+            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
                 android:text="Area of "
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
                 android:background="@color/color_bg"
                 android:layout_weight="2.1" />
 
-            <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Medium
+            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Medium
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/area_of"
@@ -137,7 +137,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
+    <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -214,7 +214,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+                    <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -257,7 +257,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+                    <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -302,7 +302,7 @@
                     android:gravity="center"
                     android:visibility="gone">
 
-                    <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+                    <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/color_bg"
@@ -362,7 +362,7 @@
             android:layout_weight="1.5"
             android:gravity="right">
 
-            <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -383,7 +383,7 @@
                 android:layout_weight="1"
                 android:gravity="center">
 
-                <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+                <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -439,7 +439,7 @@
             android:layout_weight="1.65"
             android:gravity="center">
 
-            <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -486,7 +486,7 @@
 
     </LinearLayout>
 
-    <com.vensoc.bergerpaints.calculator.CoustomButtonByFont.Raleway_Bold
+    <com.e2esp.bergerpaints.calculator.CoustomButtonByFont.Raleway_Bold
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:text="Calculate"

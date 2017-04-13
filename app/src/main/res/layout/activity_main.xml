@@ -35,7 +35,7 @@
         android:layout_marginRight="@dimen/heading_left_margin"
         android:layout_marginLeft="@dimen/heading_left_margin">
 
-        <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Bold
+        <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Bold
             android:text="Paint Calculator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:layout_marginLeft="7dp" />
     </LinearLayout>
 
-    <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
+    <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -77,7 +77,7 @@
         android:layout_marginTop="5dp"
         android:paddingBottom="10dp">
 
-        <com.vensoc.bergerpaints.calculator.CoustomButtonByFont.Raleway_Light
+        <com.e2esp.bergerpaints.calculator.CoustomButtonByFont.Raleway_Light
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:text="Ceiling"
@@ -92,7 +92,7 @@
             android:stateListAnimator="@null"
             android:textSize="@dimen/main_button_text_size" />
 
-        <com.vensoc.bergerpaints.calculator.CoustomButtonByFont.Raleway_Light
+        <com.e2esp.bergerpaints.calculator.CoustomButtonByFont.Raleway_Light
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:text="Exterior Walls"
@@ -108,7 +108,7 @@
             android:stateListAnimator="@null"
             android:textSize="@dimen/main_button_text_size" />
 
-        <com.vensoc.bergerpaints.calculator.CoustomButtonByFont.Raleway_Light
+        <com.e2esp.bergerpaints.calculator.CoustomButtonByFont.Raleway_Light
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:text="Interior Walls"
@@ -124,7 +124,7 @@
             android:layout_weight="1"
             android:textSize="@dimen/main_button_text_size" />
 
-        <com.vensoc.bergerpaints.calculator.CoustomButtonByFont.Raleway_Light
+        <com.e2esp.bergerpaints.calculator.CoustomButtonByFont.Raleway_Light
             android:text="Doors"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -140,7 +140,7 @@
             android:layout_weight="1"
             android:textSize="@dimen/main_button_text_size" />
 
-        <com.vensoc.bergerpaints.calculator.CoustomButtonByFont.Raleway_Light
+        <com.e2esp.bergerpaints.calculator.CoustomButtonByFont.Raleway_Light
             android:text="Windows"
             android:id="@+id/button_windows"
             android:layout_width="match_parent"
@@ -156,7 +156,7 @@
             android:layout_weight="1"
             android:textSize="@dimen/main_button_text_size" />
 
-        <com.vensoc.bergerpaints.calculator.CoustomButtonByFont.Raleway_Light
+        <com.e2esp.bergerpaints.calculator.CoustomButtonByFont.Raleway_Light
             android:text="Wood Finishes"
             android:id="@+id/wood_finishes"
             android:layout_width="match_parent"

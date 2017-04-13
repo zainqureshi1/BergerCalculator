@@ -1,6 +1,6 @@
-package com.vensoc.bergerpaints.calculator.Model;
+package com.e2esp.bergerpaints.calculator.Model;
 
-import com.vensoc.bergerpaints.calculator.R;
+import com.e2esp.bergerpaints.calculator.R;
 
 /**
  * Created by PAPPU on 12/29/2016.

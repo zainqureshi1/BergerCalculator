@@ -1,4 +1,4 @@
-package com.vensoc.bergerpaints.calculator;
+package com.e2esp.bergerpaints.calculator;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -16,7 +16,8 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.vensoc.bergerpaints.calculator.Model.Global_Class;
+import com.e2esp.bergerpaints.calculator.Model.Global_Class;
+import com.e2esp.bergerpaints.calculator.R;
 
 public class Calculator extends AppCompatActivity {
 

@@ -1,15 +1,15 @@
-package com.vensoc.bergerpaints.calculator.CoustomButtonByFont;
+package com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts;
 
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * Created by PAPPU on 12/29/2016.
  */
 
-public  class Raleway_Light extends Button {
+public  class Raleway_Light extends TextView {
 
 
     public Raleway_Light(Context context,AttributeSet attrs){

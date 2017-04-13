@@ -1,4 +1,4 @@
-package com.vensoc.bergerpaints.calculator.Model;
+package com.e2esp.bergerpaints.calculator.Model;
 
 /**
  * Created by PAPPU on 12/29/2016.

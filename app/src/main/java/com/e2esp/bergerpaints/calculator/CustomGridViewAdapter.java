@@ -1,4 +1,4 @@
-package com.vensoc.bergerpaints.calculator;
+package com.e2esp.bergerpaints.calculator;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,7 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.vensoc.bergerpaints.calculator.Model.Paint_list;
+import com.e2esp.bergerpaints.calculator.Model.Paint_list;
+import com.e2esp.bergerpaints.calculator.R;
 
 
 public class CustomGridViewAdapter extends ArrayAdapter<Paint_list> {

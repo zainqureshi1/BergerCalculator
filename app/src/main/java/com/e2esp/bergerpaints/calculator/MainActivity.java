@@ -1,4 +1,4 @@
-package com.vensoc.bergerpaints.calculator;
+package com.e2esp.bergerpaints.calculator;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.vensoc.bergerpaints.calculator.Model.Global_Class;
+import com.e2esp.bergerpaints.calculator.Model.Global_Class;
 
 public class MainActivity extends AppCompatActivity {
 

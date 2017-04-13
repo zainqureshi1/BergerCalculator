@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vensoc.bergerpaints.calculator" >
+    package="com.e2esp.bergerpaints.calculator" >
 
     <application
         android:allowBackup="true"
