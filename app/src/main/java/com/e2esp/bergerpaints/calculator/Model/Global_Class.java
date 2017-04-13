@@ -467,7 +467,7 @@ public class Global_Class {
 
         paint_Image_arry[9].setP_p_liter(666);
 
-        paint_Image_arry[10].setP_p_liter(2436);
+        paint_Image_arry[10].setP_p_liter(2606);
 
  /*
         * Door And Windows Paint
@@ -479,13 +479,13 @@ public class Global_Class {
 
         doors_and_windows[2].setP_p_liter(2436);
 
-        doors_and_windows[3].setP_p_liter(1190);
+        doors_and_windows[3].setP_p_liter(1238);
 
  /*
         *exterior Paint
          *  */
 
-        exterior[0].setP_p_liter(2340);
+        exterior[0].setP_p_liter(2480);
 
         exterior[2].setP_p_liter(3570);
 
