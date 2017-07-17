@@ -447,7 +447,7 @@ public class Global_Class {
 *
 * Set price per Liter
 * */
-        paint_Image_arry[0].setP_p_liter(2355);
+        paint_Image_arry[0].setP_p_liter(2449);
 
         paint_Image_arry[1].setP_p_liter(2178);
 
