@@ -447,7 +447,7 @@ public class Global_Class {
 *
 * Set price per Liter
 * */
-        paint_Image_arry[0].setP_p_liter(2449);
+        paint_Image_arry[0].setP_p_liter(2559);
 
         paint_Image_arry[1].setP_p_liter(2178);
 
@@ -457,7 +457,7 @@ public class Global_Class {
 
         paint_Image_arry[4].setP_p_liter(875);
 
-        paint_Image_arry[5].setP_p_liter(2800);
+        paint_Image_arry[5].setP_p_liter(2951);
 
         paint_Image_arry[6].setP_p_liter(1520);
 
@@ -475,9 +475,9 @@ public class Global_Class {
 
         doors_and_windows[0].setP_p_liter(2345);
 
-        doors_and_windows[1].setP_p_liter(2210);
+        doors_and_windows[1].setP_p_liter(2299);
 
-        doors_and_windows[2].setP_p_liter(2436);
+        doors_and_windows[2].setP_p_liter(2656);
 
         doors_and_windows[3].setP_p_liter(1238);
 
@@ -485,7 +485,7 @@ public class Global_Class {
         *exterior Paint
          *  */
 
-        exterior[0].setP_p_liter(2480);
+        exterior[0].setP_p_liter(2580);
 
         exterior[2].setP_p_liter(3570);
 
