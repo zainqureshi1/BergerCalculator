@@ -1,15 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
 
     defaultConfig {
-        applicationId "com.vensoc.bergerpaints.calculator"
-        minSdkVersion 11
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        applicationId "com.e2esp.bergerpaints.calculator"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 5
+        versionName "1.5"
     }
     buildTypes {
         release {
@@ -21,8 +20,10 @@ android {
 }
 
 dependencies {
+    ext {
+        support_library_version = '26.1.0'
+    }
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25+'
-    compile 'com.android.support:design:25+'
+    compile "com.android.support:appcompat-v7:${support_library_version}"
+    compile "com.android.support:design:${support_library_version}"
 }

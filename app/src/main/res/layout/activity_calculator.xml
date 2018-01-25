@@ -1,561 +1,511 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:background="@mipmap/logo_bg"
-    android:orientation="vertical"
     android:gravity="center"
-    android:padding="10dp">
-
-
-
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/head"
-        android:background="@mipmap/heading_bg"
         android:layout_marginLeft="@dimen/heading_left_margin"
         android:layout_marginRight="@dimen/heading_left_margin"
+        android:layout_weight="2.31"
+        android:background="@mipmap/heading_bg"
         android:gravity="center"
-        android:layout_weight="2.31">
+        android:orientation="horizontal">
 
-        <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Bold
+        <com.e2esp.bergerpaints.calculator.views.RalewayBoldTextView
+            style="@style/AudioFileInfoOverlayText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:background="@color/color_bg"
-            android:id="@+id/textView"
-            android:textColor="@color/colortext"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/imageView"
-            android:gravity="center"
-            style="@style/AudioFileInfoOverlayText"
-            android:textSize="@dimen/heading_text_size"
             android:layout_marginLeft="7dp"
-            android:text="Calculator" />
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:text="@string/calculator"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colortext"
+            android:textSize="@dimen/heading_text_size" />
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
         android:layout_weight="2.3"
-        android:gravity="center"
         android:background="@color/color_bg"
-        android:layout_marginTop="7dp">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/color_bg"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
+            <com.e2esp.bergerpaints.calculator.views.RalewayLightTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Paint "
-                android:id="@+id/textView3"
-                android:background="@color/color_bg"
-                android:layout_below="@+id/head"
-                android:layout_above="@+id/paint_gridview"
-                android:gravity="center|right"
-                android:textColor="@color/colorAccent"
-                android:textSize="@dimen/heading_text_size"
                 android:layout_marginRight="5dp"
-                android:layout_weight="2.1" />
+                android:layout_weight="2.1"
+                android:background="@color/color_bg"
+                android:gravity="center|right"
+                android:text="@string/paint__"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/heading_text_size" />
 
-            <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Medium
+            <com.e2esp.bergerpaints.calculator.views.RalewayMediumTextView
+                android:id="@+id/text_view_paint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/paint_name"
-                android:layout_below="@+id/head"
-                android:background="@drawable/button_shape"
-                android:textColor="@color/colortext"
-                android:layout_centerHorizontal="true"
-                android:textSize="@dimen/heading_text_size"
-                android:layout_toRightOf="@+id/textView3"
+                android:layout_marginRight="@dimen/label_filed_margin"
+                android:layout_weight="1"
                 android:allowUndo="false"
                 android:autoText="false"
-                android:gravity="center"
-                android:layout_marginRight="@dimen/label_filed_margin"
+                android:background="@drawable/button_shape"
                 android:ellipsize="end"
+                android:gravity="center"
                 android:maxLines="1"
-                android:layout_weight="1"
+                android:paddingBottom="2dp"
                 android:paddingLeft="5dp"
                 android:paddingTop="2dp"
-                android:paddingBottom="2dp" />
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/heading_text_size" />
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/color_bg"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
-                android:text="Area of "
+            <com.e2esp.bergerpaints.calculator.views.RalewayLightTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView4"
-                android:layout_below="@+id/textView3"
-                android:gravity="center|right"
-                android:textColor="@color/colorAccent"
-                android:textSize="@dimen/heading_text_size"
                 android:layout_marginRight="5dp"
-                android:layout_above="@+id/dec"
+                android:layout_weight="2.1"
                 android:background="@color/color_bg"
-                android:layout_weight="2.1" />
+                android:gravity="center|right"
+                android:text="@string/area_of__"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/heading_text_size" />
 
-            <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Medium
+            <com.e2esp.bergerpaints.calculator.views.RalewayMediumTextView
+                android:id="@+id/text_view_area"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/area_of"
-                android:layout_below="@+id/paint_name"
-                android:background="@drawable/button_shape"
-                android:textColor="@color/colortext"
-                android:layout_centerHorizontal="true"
-                android:textSize="@dimen/heading_text_size"
-                android:layout_toRightOf="@+id/textView4"
-                android:allowUndo="false"
-                android:autoText="false"
-                android:gravity="center"
-                android:ellipsize="end"
-                android:maxLines="1"
                 android:layout_marginRight="@dimen/label_filed_margin"
                 android:layout_weight="1"
-                android:paddingLeft="5dp"
+                android:allowUndo="false"
+                android:autoText="false"
+                android:background="@drawable/button_shape"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
                 android:paddingBottom="2dp"
-                android:paddingTop="2dp" />
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/heading_text_size" />
         </LinearLayout>
     </LinearLayout>
 
-    <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
+    <com.e2esp.bergerpaints.calculator.views.RalewayLightTextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/dec"
-        android:layout_below="@+id/area_of"
-        android:text="(* The wall dimensions are being multiplied by 3 to calculate the area of the room for interior walls.)"
+        android:layout_weight="2.65"
+        android:autoText="false"
         android:ellipsize="end"
         android:maxLines="2"
-        android:layout_weight="2.65"
+        android:text="@string/description_area_calculation"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="@dimen/dec_text_size"
-        android:visibility="gone"
-        android:autoText="false" />
+        android:visibility="gone" />
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="5dp"
-        android:layout_weight="1.33">
+        android:layout_weight="1.33"
+        android:orientation="vertical">
 
         <RadioGroup
+            android:id="@+id/radio_group_measurement_type"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1.85"
-            android:orientation="horizontal"
             android:gravity="center"
-            android:id="@+id/frgement">
+            android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/radio_button_dimensions"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dimensions"
-                android:id="@+id/dimensions"
-                android:textColor="@color/colorAccent"
-                android:textSize="@dimen/main_button_text_size"
+                android:buttonTint="@color/colorAccent"
                 android:checked="true"
-                android:buttonTint="@color/colorAccent" />
+                android:text="@string/dimensions"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/main_button_text_size" />
 
             <RadioButton
+                android:id="@+id/radio_button_total_area"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Total Area"
-                android:id="@+id/total_area"
-                android:textColor="@color/colorAccent"
-                android:textSize="@dimen/main_button_text_size"
+                android:buttonTint="@color/colorAccent"
                 android:checked="false"
-                android:buttonTint="@color/colorAccent" />
+                android:text="@string/total_area"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/main_button_text_size" />
         </RadioGroup>
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/scrollView"
-            android:layout_below="@+id/dec"
-            android:layout_above="@+id/button_calculate"
             android:layout_marginTop="5dp"
             android:layout_weight="1">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center">
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_below="@+id/dec"
-                    android:background="@color/color_bg"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:id="@+id/lenght"
                     android:layout_weight="1"
-                    android:gravity="center">
-
-                    <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Length "
-                        android:id="@+id/textView6"
-                        android:background="@color/color_bg"
-                        android:layout_below="@+id/dec"
-                        android:textSize="@dimen/main_button_text_size"
-                        android:textColor="@color/colorAccent"
-                        android:layout_weight="2.1"
-                        android:gravity="right"
-                        android:layout_marginRight="5dp" />
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/length"
-                        android:background="@drawable/button_shape"
-                        android:textColor="@color/colortext"
-                        android:layout_below="@+id/textView6"
-                        android:textSize="@dimen/heading_text_size"
-                        android:paddingLeft="5dp"
-                        android:maxLength="9"
-                        android:paddingTop="2dp"
-                        android:paddingBottom="2dp"
-                        android:layout_marginRight="@dimen/label_filed_margin"
-                        android:layout_weight="1"
-                        android:inputType="numberDecimal" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
                     android:background="@color/color_bg"
-                    android:layout_height="match_parent"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/widt"
-                    android:layout_below="@+id/lenght"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                    <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Width "
-                        android:background="@color/color_bg"
-                        android:id="@+id/textView7"
-                        android:layout_below="@+id/dec"
-                        android:textSize="@dimen/main_button_text_size"
-                        android:textColor="@color/colorAccent"
-                        android:layout_weight="2.1"
-                        android:gravity="right"
-                        android:layout_marginRight="5dp" />
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/width"
-                        android:background="@drawable/button_shape"
-                        android:textColor="@color/colortext"
-                        android:layout_below="@+id/textView7"
-                        android:textSize="@dimen/heading_text_size"
-                        android:paddingLeft="5dp"
-                        android:maxLength="9"
-                        android:paddingTop="2dp"
-                        android:paddingBottom="2dp"
-                        android:layout_marginRight="@dimen/label_filed_margin"
-                        android:layout_weight="1"
-                        android:inputType="numberDecimal" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/color_bg"
-                    android:id="@+id/windows"
-                    android:layout_below="@+id/coats"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="5dp"
                     android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                        android:id="@+id/text_view_label_length"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="2.1"
+                        android:background="@color/color_bg"
+                        android:gravity="right"
+                        android:text="@string/length__"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/main_button_text_size" />
+
+                    <EditText
+                        android:id="@+id/edit_text_length"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/label_filed_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_shape"
+                        android:inputType="numberDecimal"
+                        android:maxLength="9"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"
+                        android:textColor="@color/colortext"
+                        android:textSize="@dimen/heading_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/view_container_width"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="2.1"
+                        android:background="@color/color_bg"
+                        android:gravity="right"
+                        android:text="@string/width__"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/main_button_text_size" />
+
+                    <EditText
+                        android:id="@+id/edit_text_width"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/label_filed_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_shape"
+                        android:inputType="numberDecimal"
+                        android:maxLength="9"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"
+                        android:textColor="@color/colortext"
+                        android:textSize="@dimen/heading_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/view_container_extra_part"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
                     android:visibility="gone">
 
-                    <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+                    <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                        android:id="@+id/text_view_extra_part"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/color_bg"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Windows "
-                        android:id="@+id/w_d_no"
-                        android:layout_below="@+id/dec"
-                        android:textIsSelectable="false"
-                        android:textSize="@dimen/main_button_text_size"
-                        android:textColor="@color/colorAccent"
-                        android:layout_weight="2.1"
                         android:layout_marginRight="5dp"
-                        android:gravity="right" />
+                        android:layout_weight="2.1"
+                        android:background="@color/color_bg"
+                        android:gravity="right"
+                        android:text="@string/windows__"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorAccent"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/main_button_text_size" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:layout_marginRight="@dimen/label_filed_margin"
+                        android:layout_weight="1"
                         android:gravity="center">
 
                         <Spinner
+                            android:id="@+id/spinner_extra_part"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/spinner_d_w"
-                            android:textColor="@color/colortext"
+                            android:layout_centerInParent="true"
                             android:background="@drawable/button_shape"
-                            android:spinnerMode="dropdown"
-                            android:popupBackground="@color/color_result"
                             android:paddingLeft="5dp"
-                            android:layout_centerInParent="true" />
+                            android:popupBackground="@color/color_result"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@color/colortext" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:id="@+id/imageView4"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/droppng"
+                            android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
-                            android:layout_alignParentRight="true" />
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/droppng" />
                     </RelativeLayout>
 
                 </LinearLayout>
 
             </LinearLayout>
+
         </ScrollView>
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/color_bg"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:id="@+id/coats"
-            android:layout_below="@+id/widt"
             android:layout_weight="1.5"
-            android:gravity="right">
+            android:background="@color/color_bg"
+            android:gravity="right"
+            android:orientation="vertical">
 
-            <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:id="@+id/text_view_recommended_coats"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Recommended coats: 2-3"
-                android:id="@+id/recomend_cots"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="@dimen/label_filed_margin"
                 android:background="@color/color_bg"
-                android:layout_below="@+id/dec"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:textColor="@color/colorAccent"
-                android:layout_marginBottom="5dp"
-                android:layout_marginRight="@dimen/label_filed_margin" />
+                android:text="@string/hint_recommended_coats"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorAccent" />
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
-                <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+                <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="No. of Coats "
-                    android:id="@+id/textView9"
-                    android:background="@color/color_bg"
-                    android:layout_below="@+id/dec"
-                    android:textSize="@dimen/main_button_text_size"
-                    android:textColor="@color/colorAccent"
-                    android:layout_weight="2.1"
                     android:layout_marginRight="5dp"
-                    android:gravity="right" />
+                    android:layout_weight="2.1"
+                    android:background="@color/color_bg"
+                    android:gravity="right"
+                    android:text="@string/no_of_coats__"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/main_button_text_size" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center|right"
                     android:layout_marginRight="@dimen/label_filed_margin"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center|right">
 
                     <Spinner
+                        android:id="@+id/spinner_coats"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/spinner_coats"
-                        android:textColor="@color/colortext"
-                        android:background="@drawable/button_shape"
-                        android:spinnerMode="dropdown"
-                        android:popupBackground="@color/color_result"
                         android:layout_centerInParent="true"
-                        android:paddingLeft="5dp" />
+                        android:background="@drawable/button_shape"
+                        android:paddingLeft="5dp"
+                        android:popupBackground="@color/color_result"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/colortext" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:id="@+id/imageView3"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/droppng"
+                        android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_alignParentRight="true" />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/droppng" />
+
                 </RelativeLayout>
+
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/color_bg"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:layout_below="@+id/widt"
             android:layout_weight="1.65"
-            android:gravity="center">
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <com.vensoc.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text=" "
-                android:id="@+id/textView99"
-                android:background="@color/color_bg"
-                android:layout_below="@+id/dec"
-                android:textSize="@dimen/main_button_text_size"
-                android:textColor="@color/colorAccent"
+                android:layout_marginRight="5dp"
                 android:layout_weight="2.1"
+                android:background="@color/color_bg"
                 android:gravity="right"
-                android:layout_marginRight="5dp" />
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/main_button_text_size" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
                 android:layout_marginRight="@dimen/label_filed_margin"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:gravity="right">
 
                 <Spinner
+                    android:id="@+id/spinner_measurement_size"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/meter"
-                    android:textColor="@color/colortext"
-                    android:background="@drawable/button_shape"
-                    android:spinnerMode="dropdown"
-                    android:popupBackground="@color/color_result"
                     android:layout_centerVertical="true"
-                    android:paddingLeft="5dp" />
+                    android:background="@drawable/button_shape"
+                    android:paddingLeft="5dp"
+                    android:popupBackground="@color/color_result"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/colortext" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView9"
-
-                    android:layout_marginRight="10dp"
-                    android:src="@drawable/droppng"
+                    android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true" />
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/droppng" />
             </RelativeLayout>
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <com.vensoc.bergerpaints.calculator.CoustomButtonByFont.Raleway_Bold
+    <com.e2esp.bergerpaints.calculator.views.RalewayBoldButton
+        android:id="@+id/button_calculate"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="Calculate"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
+        android:layout_weight="2.5"
         android:background="@drawable/calculate_button"
-        android:textColor="@color/colortext"
         android:paddingLeft="@dimen/calculate_button_padding"
         android:paddingRight="@dimen/calculate_button_padding"
-        android:textSize="@dimen/calculate_button_text_size"
-        android:layout_above="@+id/next_b"
-        android:id="@+id/button_calculate"
-        android:layout_weight="2.5" />
+        android:text="@string/calculate"
+        android:textColor="@color/colortext"
+        android:textSize="@dimen/calculate_button_text_size" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="left|bottom"
-        android:background="@color/color_bg"
         android:layout_weight="2.37"
+        android:background="@color/color_bg"
+        android:gravity="left|bottom"
+        android:orientation="horizontal"
         android:padding="5dp">
 
-
         <LinearLayout
-            android:orientation="vertical"
+            android:id="@+id/view_back"
             android:layout_width="@dimen/next_button"
             android:layout_height="@dimen/next_button"
             android:background="@drawable/forward_button_shape"
-            android:id="@+id/back"
-            android:rotation="180"
-            android:visibility="visible"
             android:gravity="left"
-            android:padding="12dp">
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:rotation="180"
+            android:visibility="visible">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageViewf2"
-                android:src="@mipmap/next"
                 android:layout_gravity="center"
                 android:foregroundGravity="right"
-                android:paddingLeft="3dp" />
+                android:paddingLeft="3dp"
+                android:src="@mipmap/next" />
+
         </LinearLayout>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:background="@color/color_bg"
             android:layout_height="match_parent"
-            android:gravity="bottom|right">
+            android:background="@color/color_bg"
+            android:gravity="bottom|right"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/view_reset"
                 android:layout_width="@dimen/next_button"
                 android:layout_height="@dimen/next_button"
                 android:background="@drawable/forward_button_shape"
-                android:id="@+id/next_b"
                 android:gravity="center"
-                android:visibility="gone"
-                android:padding="12dp">
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:visibility="gone">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView2"
-                    android:src="@mipmap/reset"
                     android:layout_gravity="center"
+                    android:layout_margin="15dp"
                     android:paddingLeft="3dp"
-                    android:layout_margin="15dp" />
+                    android:src="@mipmap/reset" />
+
             </LinearLayout>
 
         </LinearLayout>
