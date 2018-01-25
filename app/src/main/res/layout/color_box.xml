@@ -16,7 +16,7 @@
         android:paddingBottom="5dp"
         android:src="@drawable/image1" />
 
-    <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Bold
+    <com.e2esp.bergerpaints.calculator.views.RalewayBoldTextView
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"

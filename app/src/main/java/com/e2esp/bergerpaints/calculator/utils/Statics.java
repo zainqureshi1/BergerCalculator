@@ -1,18 +1,18 @@
-package com.e2esp.bergerpaints.calculator.Model;
+package com.e2esp.bergerpaints.calculator.utils;
 
 import com.e2esp.bergerpaints.calculator.R;
+import com.e2esp.bergerpaints.calculator.models.Area;
+import com.e2esp.bergerpaints.calculator.models.Paint;
 
 /**
- * Created by PAPPU on 12/29/2016.
+ *
+ * Created by Zain on 12/15/2017.
  */
-public class Global_Class {
-    /*
-    *
-    * All variables
-    * */
 
-    private static String Area;
-    private static Paint_list paint;
+public class Statics {
+
+    private static Area area;
+    private static Paint paint;
     private static String length;
     private static String width;
     private static String coats;
@@ -27,10 +27,10 @@ public class Global_Class {
     /*
     * All type Of paint arrays
     * */
-    public static Paint_list[] paint_Image_arry = new Paint_list[11];
-    public static Paint_list[] exterior = new Paint_list[3];
-    public static Paint_list[] doors_and_windows = new Paint_list[4];
-    public static Paint_list[] wood_finishes = new Paint_list[4];
+    public static Paint[] paint_Image_arry = new Paint[11];
+    public static Paint[] exterior = new Paint[3];
+    public static Paint[] doors_and_windows = new Paint[4];
+    public static Paint[] wood_finishes = new Paint[4];
     /*
     * measurement types array
     * */
@@ -40,21 +40,21 @@ public class Global_Class {
     /*
     * Creat Private variables Getter Setter
     * */
-    public static String getArea() {
-        return Area;
+    public static Area getArea() {
+        return area;
     }
 
 
-    public static void setArea(String area) {
-        Area = area;
+    public static void setArea(Area area) {
+        Statics.area = area;
     }
 
-    public static Paint_list getPaint() {
+    public static Paint getPaint() {
         return paint;
     }
 
-    public static void setPaint(Paint_list paint) {
-        Global_Class.paint = paint;
+    public static void setPaint(Paint paint) {
+        Statics.paint = paint;
     }
 
     public static String getLength() {
@@ -62,7 +62,7 @@ public class Global_Class {
     }
 
     public static void setLength(String length) {
-        Global_Class.length = length;
+        Statics.length = length;
     }
 
     public static String getWidth() {
@@ -70,7 +70,7 @@ public class Global_Class {
     }
 
     public static void setWidth(String width) {
-        Global_Class.width = width;
+        Statics.width = width;
     }
 
     public static String getCoats() {
@@ -78,7 +78,7 @@ public class Global_Class {
     }
 
     public static void setCoats(String coats) {
-        Global_Class.coats = coats;
+        Statics.coats = coats;
     }
 
     public static String getWindow_door() {
@@ -86,7 +86,7 @@ public class Global_Class {
     }
 
     public static void setWindow_door(String window_door) {
-        Global_Class.window_door = window_door;
+        Statics.window_door = window_door;
     }
 
     public static String getResult() {
@@ -110,15 +110,15 @@ public class Global_Class {
     }
 
     public static void setMeasurement_s(String measurement_s) {
-        Global_Class.measurement_s = measurement_s;
+        Statics.measurement_s = measurement_s;
     }
 /*
 * Set all Value Null
 * */
 
     public static void reset() {
-        Area = "";
-        paint = new Paint_list();
+        area = Area.NA;
+        paint = new Paint();
         length = "";
         width = "";
         coats = "";
@@ -133,36 +133,52 @@ public class Global_Class {
 
     public static void Calculat() {
         if (measurement_s.equals("0")) {
-            if (Area.equals("Celing")) {
-                celing();
-            } else if (Area.equals("Exterior Walls")) {
-                Exterior_Walls();
-            } else if (Area.equals("Interior Walls")) {
-                Interior_Walls();
-            } else if (Area.equals("Doors")) {
-                Doors();
-            } else if (Area.equals("Windows")) {
-                Windows();
-            } else if (Area.equals("Wood finishes")) {
-                celing();
-            } else {
-                Result = "";
+            switch (area) {
+                case CEILING:
+                    celing();
+                    break;
+                case EXTERIOR_WALLS:
+                    Exterior_Walls();
+                    break;
+                case INTERIOR_WALLS:
+                    Interior_Walls();
+                    break;
+                case DOORS:
+                    Doors();
+                    break;
+                case WINDOWS:
+                    Windows();
+                    break;
+                case WOOD_FINISHES:
+                    celing();
+                    break;
+                default:
+                    Result = "";
+                    break;
             }
         } else {
-            if (Area.equals("Celing")) {
-                celing(1);
-            } else if (Area.equals("Exterior Walls")) {
-                Exterior_Walls(1);
-            } else if (Area.equals("Interior Walls")) {
-                Interior_Walls(1);
-            } else if (Area.equals("Doors")) {
-                Doors(1);
-            } else if (Area.equals("Windows")) {
-                Windows(1);
-            } else if (Area.equals("Wood finishes")) {
-                celing(1);
-            } else {
-                Result = "";
+            switch (area) {
+                case CEILING:
+                    celing(1);
+                    break;
+                case EXTERIOR_WALLS:
+                    Exterior_Walls(1);
+                    break;
+                case INTERIOR_WALLS:
+                    Interior_Walls(1);
+                    break;
+                case DOORS:
+                    Doors(1);
+                    break;
+                case WINDOWS:
+                    Windows(1);
+                    break;
+                case WOOD_FINISHES:
+                    celing(1);
+                    break;
+                default:
+                    Result = "";
+                    break;
             }
         }
 
@@ -176,18 +192,18 @@ public class Global_Class {
 
         for (int i = 0; i < paint_Image_arry.length; i++) {
 
-            paint_Image_arry[i] = new Paint_list();
+            paint_Image_arry[i] = new Paint();
             if (i < exterior.length) {
 
-                exterior[i] = new Paint_list();
+                exterior[i] = new Paint();
             }
 
             if (i < doors_and_windows.length) {
-                doors_and_windows[i] = new Paint_list();
+                doors_and_windows[i] = new Paint();
 
             }
             if (i < wood_finishes.length) {
-                wood_finishes[i] = new Paint_list();
+                wood_finishes[i] = new Paint();
 
             }
         }

@@ -1,9 +1,11 @@
-package com.e2esp.bergerpaints.calculator.Model;
+package com.e2esp.bergerpaints.calculator.models;
 
 /**
- * Created by PAPPU on 12/29/2016.
+ *
+ * Created by Zain on 12/15/2017.
  */
-public class Paint_list {
+
+public class Paint {
     /*
     * Paint Class all Variables
     * */
@@ -16,13 +18,14 @@ public class Paint_list {
     private double p_liters;
 
     /*
-    * Creat All Getter setter
+    * Create All Getter setter
     * */
 
-    public Paint_list(){
-        name="";
-         image_id=0;
+    public Paint() {
+        name = "";
+        image_id = 0;
     }
+
     public String getName() {
         return name;
     }
@@ -78,4 +81,5 @@ public class Paint_list {
     public void setRecommend_cots(String recommend_cots) {
         this.recommend_cots = recommend_cots;
     }
+
 }

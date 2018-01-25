@@ -1,256 +1,235 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:background="@mipmap/logo_bg"
-    android:orientation="vertical"
     android:gravity="center"
-    android:padding="10dp">
-
-
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/head"
-        android:layout_below="@+id/imageView"
-        android:background="@mipmap/heading_bg"
         android:layout_marginLeft="@dimen/heading_left_margin"
         android:layout_marginRight="@dimen/heading_left_margin"
+        android:layout_weight="2.56"
+        android:background="@mipmap/heading_bg"
         android:gravity="center"
-        android:layout_weight="2.56">
+        android:orientation="horizontal">
 
-        <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Bold
+        <com.e2esp.bergerpaints.calculator.views.RalewayBoldTextView
+            style="@style/AudioFileInfoOverlayText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-
-            android:id="@+id/textView"
-            android:textColor="@color/colortext"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/imageView"
-            android:gravity="center"
-            style="@style/AudioFileInfoOverlayText"
-            android:textSize="@dimen/heading_text_size"
             android:layout_marginLeft="7dp"
-            android:text="Result" />
+            android:gravity="center"
+            android:text="@string/result"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colortext"
+            android:textSize="@dimen/heading_text_size" />
     </LinearLayout>
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2.54"
-        android:gravity="center"
         android:layout_marginTop="7dp"
-        android:background="@color/color_bg">
+        android:layout_weight="2.54"
+        android:background="@color/color_bg"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/color_bg"
-            android:gravity="center">
-
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Paint:"
-                android:id="@+id/textView3"
-                android:layout_below="@+id/head"
-                android:layout_above="@+id/paint_gridview"
-                android:gravity="center|right"
-                android:textColor="@color/colorAccent"
-                android:textSize="@dimen/heading_text_size"
-                android:layout_marginRight="5dp"
-                android:background="@color/color_bg"
-                android:layout_weight="2.1" />
-
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Medium
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/paint_name"
-                android:layout_below="@+id/head"
-                android:background="@drawable/button_shape"
-                android:textColor="@color/colortext"
-                android:layout_centerHorizontal="true"
-                android:textSize="@dimen/heading_text_size"
-                android:layout_toRightOf="@+id/textView3"
-                android:allowUndo="false"
-                android:autoText="false"
-                android:gravity="center"
-                android:layout_marginRight="@dimen/label_filed_margin"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/color_bg"
-            android:gravity="center">
-
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
-                android:text="Area of:"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView4"
-                android:layout_below="@+id/textView3"
-                android:gravity="center|right"
-                android:textColor="@color/colorAccent"
-                android:textSize="@dimen/heading_text_size"
-                android:layout_marginRight="5dp"
-                android:layout_above="@+id/dec"
-                android:background="@color/color_bg"
-                android:layout_weight="2.1" />
-
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Medium
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/area_of"
-                android:layout_below="@+id/paint_name"
-                android:background="@drawable/button_shape"
-                android:textColor="@color/colortext"
-                android:layout_centerHorizontal="true"
-                android:textSize="@dimen/heading_text_size"
-                android:layout_toRightOf="@+id/textView4"
-                android:allowUndo="false"
-                android:autoText="false"
-                android:gravity="center"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:layout_marginRight="@dimen/label_filed_margin"
-                android:layout_weight="1" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2.66"
-        android:layout_marginTop="5dp"
-        android:background="@color/color_bg">
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/color_bg"
-            android:gravity="center">
-
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Length"
-                android:id="@+id/textView5"
-                android:background="@color/color_bg"
-                android:textColor="@color/color_result"
-                android:textSize="@dimen/heading_text_size" />
-
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:id="@+id/lenght"
-                android:background="@color/color_bg"
-                android:textSize="@dimen/heading_text_size" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/color_bg"
             android:gravity="center"
-            android:id="@+id/widthe">
+            android:orientation="horizontal">
 
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
-                android:layout_width="wrap_content"
+            <com.e2esp.bergerpaints.calculator.views.RalewayLightTextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Width"
-                android:id="@+id/textView11"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2.1"
                 android:background="@color/color_bg"
-                android:textColor="@color/color_result"
+                android:gravity="center|right"
+                android:text="@string/paint_c"
+                android:textColor="@color/colorAccent"
                 android:textSize="@dimen/heading_text_size" />
 
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
-                android:layout_width="wrap_content"
+            <com.e2esp.bergerpaints.calculator.views.RalewayMediumTextView
+                android:id="@+id/text_view_paint"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:layout_marginRight="@dimen/label_filed_margin"
+                android:layout_weight="1"
+                android:allowUndo="false"
+                android:autoText="false"
+                android:background="@drawable/button_shape"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/heading_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.e2esp.bergerpaints.calculator.views.RalewayLightTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2.1"
                 android:background="@color/color_bg"
-                android:id="@+id/width"
+                android:gravity="center|right"
+                android:text="@string/area_of_c"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/heading_text_size" />
+
+            <com.e2esp.bergerpaints.calculator.views.RalewayMediumTextView
+                android:id="@+id/text_view_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/label_filed_margin"
+                android:layout_weight="1"
+                android:allowUndo="false"
+                android:autoText="false"
+                android:background="@drawable/button_shape"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/colortext"
                 android:textSize="@dimen/heading_text_size" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2.66"
         android:layout_marginTop="5dp"
-        android:background="@color/color_bg">
+        android:layout_weight="2.66"
+        android:background="@color/color_bg"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:orientation="vertical"
-            android:background="@color/color_bg"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center">
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:id="@+id/text_view_label_length"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="No. of Coats"
-                android:id="@+id/textView13"
                 android:background="@color/color_bg"
+                android:text="@string/length"
                 android:textColor="@color/color_result"
                 android:textSize="@dimen/heading_text_size" />
 
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:id="@+id/text_view_length"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:id="@+id/Cots"
                 android:background="@color/color_bg"
+                android:text="0"
                 android:textSize="@dimen/heading_text_size" />
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
+            android:id="@+id/view_container_width"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
-            android:id="@+id/extra"
             android:background="@color/color_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_bg"
+                android:text="@string/width"
+                android:textColor="@color/color_result"
+                android:textSize="@dimen/heading_text_size" />
+
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:id="@+id/text_view_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_bg"
+                android:text="0"
+                android:textSize="@dimen/heading_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_weight="2.66"
+        android:background="@color/color_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_bg"
+                android:text="@string/no_of_coats"
+                android:textColor="@color/color_result"
+                android:textSize="@dimen/heading_text_size" />
+
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:id="@+id/text_view_coats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_bg"
+                android:text="0"
+                android:textSize="@dimen/heading_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_container_extra_part"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:orientation="vertical"
             android:visibility="invisible">
 
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:id="@+id/text_view_extra_part_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="No. of Door"
-                android:id="@+id/n_d_w"
                 android:background="@color/color_bg"
+                android:text="@string/no_of_door"
                 android:textColor="@color/color_result"
                 android:textSize="@dimen/heading_text_size" />
 
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:id="@+id/text_view_extra_part"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:id="@+id/w_d"
                 android:background="@color/color_bg"
+                android:text="0"
                 android:textSize="@dimen/heading_text_size" />
         </LinearLayout>
     </LinearLayout>
@@ -258,148 +237,141 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView2"
-        android:layout_weight="2.05" >
+        android:layout_weight="2.05">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:id="@+id/text_view_result"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="18.36 Liter(s)"
-                android:id="@+id/result"
-                android:layout_above="@+id/textView10"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/color_result"
-                android:textSize="@dimen/result_text_size"
                 android:layout_marginTop="10dp"
-                android:ellipsize="end"
-                android:maxLines="1"
                 android:background="@color/color_bg"
-                android:gravity="bottom|center" />
+                android:ellipsize="end"
+                android:gravity="bottom|center"
+                android:maxLines="1"
+                android:text="@string/sample_result_price"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/color_result"
+                android:textSize="@dimen/result_text_size" />
 
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Light
+            <com.e2esp.bergerpaints.calculator.views.RalewayLightTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="The given result is an approximation of the paint estimation."
-                android:id="@+id/textView10"
-                android:layout_centerInParent="true"
-                android:textSize="@dimen/result_dec_text_size"
                 android:layout_marginTop="5dp"
+                android:background="@color/color_bg"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:background="@color/color_bg" />
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+                android:text="@string/description_result"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/result_dec_text_size" />
+
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:id="@+id/text_view_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Rs: 2406.46"
-                android:id="@+id/price"
-                android:layout_above="@+id/textView10"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/color_result"
-                android:textSize="@dimen/heading_text_size"
                 android:layout_marginTop="10dp"
-                android:ellipsize="end"
-                android:maxLines="1"
                 android:background="@color/color_bg"
-                android:gravity="bottom|center" />
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
+                android:ellipsize="end"
+                android:gravity="bottom|center"
+                android:maxLines="1"
+                android:text="@string/sample_price"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/color_result"
+                android:textSize="@dimen/heading_text_size" />
+
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:id="@+id/text_view_unit_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text=""
-                android:id="@+id/price_s_q"
-                android:layout_above="@+id/textView10"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/color_result"
-                android:textSize="@dimen/heading_text_size"
                 android:layout_marginTop="5dp"
-                android:ellipsize="end"
-                android:maxLines="1"
                 android:background="@color/color_bg"
-                android:gravity="bottom|center"
-                android:padding="5dp" />
-            <com.e2esp.bergerpaints.calculator.CoustomTextViewByFonts.Raleway_Regular
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text=""
-                android:id="@+id/price_s_m"
-                android:layout_above="@+id/textView10"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/color_result"
-                android:textSize="@dimen/heading_text_size"
-                android:layout_marginTop="5dp"
                 android:ellipsize="end"
-                android:maxLines="1"
-                android:background="@color/color_bg"
                 android:gravity="bottom|center"
+                android:maxLines="1"
                 android:padding="5dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/color_result"
+                android:textSize="@dimen/heading_text_size" />
+
+            <com.e2esp.bergerpaints.calculator.views.RalewayRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/color_bg"
+                android:ellipsize="end"
+                android:gravity="bottom|center"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/color_result"
+                android:textSize="@dimen/heading_text_size"
                 android:visibility="gone" />
+
         </LinearLayout>
+
     </ScrollView>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="left|bottom"
-        android:background="@color/color_bg"
         android:layout_weight="2.5"
+        android:background="@color/color_bg"
+        android:gravity="left|bottom"
+        android:orientation="horizontal"
         android:padding="5dp">
 
-
         <LinearLayout
-            android:orientation="vertical"
+            android:id="@+id/view_back"
             android:layout_width="@dimen/next_button"
             android:layout_height="@dimen/next_button"
             android:background="@drawable/forward_button_shape"
-            android:id="@+id/back"
-            android:rotation="180"
             android:gravity="center"
-            android:visibility="visible"
-            android:padding="12dp">
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:rotation="180"
+            android:visibility="visible">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageViewf2"
-                android:src="@mipmap/next"
                 android:layout_gravity="center"
-                android:paddingLeft="3dp" />
+                android:paddingLeft="3dp"
+                android:src="@mipmap/next" />
+
         </LinearLayout>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:background="@color/color_bg"
             android:layout_height="match_parent"
-            android:gravity="bottom|right">
+            android:background="@color/color_bg"
+            android:gravity="bottom|right"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/view_next"
                 android:layout_width="@dimen/next_button"
                 android:layout_height="@dimen/next_button"
                 android:background="@drawable/forward_button_shape"
-                android:id="@+id/next_b"
                 android:gravity="center"
-                android:visibility="visible"
-                android:padding="2dp">
+                android:orientation="vertical"
+                android:padding="2dp"
+                android:visibility="visible">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView2"
-                    android:src="@mipmap/reset"
                     android:layout_gravity="center"
                     android:layout_marginLeft="3dp"
-                    android:paddingRight="6dp" />
+                    android:paddingRight="6dp"
+                    android:src="@mipmap/reset" />
+
             </LinearLayout>
 
         </LinearLayout>
