@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/logo_bg"
+    android:background="@drawable/logo_bg"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
@@ -15,7 +15,7 @@
         android:layout_marginLeft="@dimen/heading_left_margin"
         android:layout_marginRight="@dimen/heading_left_margin"
         android:layout_weight="2.56"
-        android:background="@mipmap/heading_bg"
+        android:background="@drawable/heading_bg"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -343,7 +343,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:paddingLeft="3dp"
-                android:src="@mipmap/next" />
+                android:src="@drawable/next" />
 
         </LinearLayout>
 
@@ -370,7 +370,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="3dp"
                     android:paddingRight="6dp"
-                    android:src="@mipmap/reset" />
+                    android:src="@drawable/reset" />
 
             </LinearLayout>
 
