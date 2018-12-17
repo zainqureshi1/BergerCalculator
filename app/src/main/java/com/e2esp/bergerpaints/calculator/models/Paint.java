@@ -15,7 +15,7 @@ public class Paint {
     private int square_feet;
     private double metre_square;
     private double liter;
-    private double p_liters;
+    private double price;
 
     /*
     * Create All Getter setter
@@ -58,12 +58,12 @@ public class Paint {
         this.metre_square = metre_square;
     }
 
-    public double getP_p_liter() {
-        return p_liters;
+    public double getPrice() {
+        return price;
     }
 
-    public void setP_p_liter(double p_p_liter) {
-        this.p_liters = p_p_liter;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public double getLiter() {

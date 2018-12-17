@@ -215,7 +215,7 @@ public class Statics {
         paint_Image_arry[0].setImage_id(R.drawable.image1);
         paint_Image_arry[0].setSquare_feet(161);
         paint_Image_arry[0].setMetre_square(15);
-        paint_Image_arry[0].setP_p_liter(2767);
+        paint_Image_arry[0].setPrice(2399);
         paint_Image_arry[0].setLiter(4);
         paint_Image_arry[0].setRecommend_cots("2-3");
 
@@ -223,7 +223,7 @@ public class Statics {
         paint_Image_arry[1].setImage_id(R.drawable.image3);
         paint_Image_arry[1].setSquare_feet(151);
         paint_Image_arry[1].setMetre_square(14);
-        paint_Image_arry[1].setP_p_liter(2178);
+        paint_Image_arry[1].setPrice(1919);
         paint_Image_arry[1].setLiter(4);
         paint_Image_arry[1].setRecommend_cots("2-3");
 
@@ -231,7 +231,7 @@ public class Statics {
         paint_Image_arry[2].setImage_id(R.drawable.image7);
         paint_Image_arry[2].setSquare_feet(151);
         paint_Image_arry[2].setMetre_square(14);
-        paint_Image_arry[2].setP_p_liter(1693);
+        paint_Image_arry[2].setPrice(1382);
         paint_Image_arry[2].setLiter(3.64);
         paint_Image_arry[2].setRecommend_cots("2-3");
 
@@ -239,7 +239,7 @@ public class Statics {
         paint_Image_arry[3].setImage_id(R.drawable.image8);
         paint_Image_arry[3].setSquare_feet(140);
         paint_Image_arry[3].setMetre_square(13);
-        paint_Image_arry[3].setP_p_liter(1107);
+        paint_Image_arry[3].setPrice(977);
         paint_Image_arry[3].setLiter(3.64);
         paint_Image_arry[3].setRecommend_cots("2-3");
 
@@ -247,7 +247,7 @@ public class Statics {
         paint_Image_arry[4].setImage_id(R.drawable.image9);
         paint_Image_arry[4].setSquare_feet(140);
         paint_Image_arry[4].setMetre_square(13);
-        paint_Image_arry[4].setP_p_liter(994);
+        paint_Image_arry[4].setPrice(844);
         paint_Image_arry[4].setLiter(3.64);
         paint_Image_arry[4].setRecommend_cots("2-3");
 
@@ -255,7 +255,7 @@ public class Statics {
         paint_Image_arry[5].setImage_id(R.drawable.image10);
         paint_Image_arry[5].setSquare_feet(200);
         paint_Image_arry[5].setMetre_square(18.5);
-        paint_Image_arry[5].setP_p_liter(3246);
+        paint_Image_arry[5].setPrice(2770);
         paint_Image_arry[5].setLiter(4);
         paint_Image_arry[5].setRecommend_cots("2-3");
 
@@ -263,7 +263,7 @@ public class Statics {
         paint_Image_arry[6].setImage_id(R.drawable.image11);
         paint_Image_arry[6].setSquare_feet(32);
         paint_Image_arry[6].setMetre_square(3);
-        paint_Image_arry[6].setP_p_liter(1520);
+        paint_Image_arry[6].setPrice(1607);
         paint_Image_arry[6].setLiter(1);
         paint_Image_arry[6].setRecommend_cots("3-4");
 
@@ -271,7 +271,7 @@ public class Statics {
         paint_Image_arry[7].setImage_id(R.drawable.image12);
         paint_Image_arry[7].setSquare_feet(350);
         paint_Image_arry[7].setMetre_square(32.5);
-        paint_Image_arry[7].setP_p_liter(1020);
+        paint_Image_arry[7].setPrice(1240);
         paint_Image_arry[7].setLiter(0.5);
         paint_Image_arry[7].setRecommend_cots("1");
 
@@ -279,7 +279,7 @@ public class Statics {
         paint_Image_arry[8].setImage_id(R.drawable.image13);
         paint_Image_arry[8].setSquare_feet(16);
         paint_Image_arry[8].setMetre_square(1.5);
-        paint_Image_arry[8].setP_p_liter(2400);
+        paint_Image_arry[8].setPrice(2723);
         paint_Image_arry[8].setLiter(24);
         paint_Image_arry[8].setRecommend_cots("1");
 
@@ -287,7 +287,7 @@ public class Statics {
         paint_Image_arry[9].setImage_id(R.drawable.image17);
         paint_Image_arry[9].setSquare_feet(151);
         paint_Image_arry[9].setMetre_square(14);
-        paint_Image_arry[9].setP_p_liter(746);
+        paint_Image_arry[9].setPrice(674);
         paint_Image_arry[9].setLiter(3.64);
         paint_Image_arry[9].setRecommend_cots("2-3");
 
@@ -295,7 +295,7 @@ public class Statics {
         paint_Image_arry[10].setImage_id(R.drawable.image5);
         paint_Image_arry[10].setSquare_feet(151);
         paint_Image_arry[10].setMetre_square(14);
-        paint_Image_arry[10].setP_p_liter(2606);
+        paint_Image_arry[10].setPrice(2606);
         paint_Image_arry[10].setLiter(3.64);
         paint_Image_arry[10].setRecommend_cots("2");
 
@@ -308,7 +308,7 @@ public class Statics {
         doors_and_windows[0].setImage_id(R.drawable.image2);
         doors_and_windows[0].setSquare_feet(151);
         doors_and_windows[0].setMetre_square(14);
-        doors_and_windows[0].setP_p_liter(2345);
+        doors_and_windows[0].setPrice(3349);
         doors_and_windows[0].setLiter(3.64);
         doors_and_windows[0].setRecommend_cots("2");
 
@@ -316,7 +316,7 @@ public class Statics {
         doors_and_windows[1].setImage_id(R.drawable.image4);
         doors_and_windows[1].setSquare_feet(151);
         doors_and_windows[1].setMetre_square(14);
-        doors_and_windows[1].setP_p_liter(2633);
+        doors_and_windows[1].setPrice(2395);
         doors_and_windows[1].setLiter(3.64);
         doors_and_windows[1].setRecommend_cots("2-3");
 
@@ -324,7 +324,7 @@ public class Statics {
         doors_and_windows[2].setImage_id(R.drawable.image5);
         doors_and_windows[2].setSquare_feet(151);
         doors_and_windows[2].setMetre_square(14);
-        doors_and_windows[2].setP_p_liter(3011);
+        doors_and_windows[2].setPrice(2447);
         doors_and_windows[2].setLiter(3.64);
         doors_and_windows[2].setRecommend_cots("2");
 
@@ -332,7 +332,7 @@ public class Statics {
         doors_and_windows[3].setImage_id(R.drawable.image16);
         doors_and_windows[3].setSquare_feet(151);
         doors_and_windows[3].setMetre_square(14);
-        doors_and_windows[3].setP_p_liter(1388);
+        doors_and_windows[3].setPrice(1380);
         doors_and_windows[3].setLiter(3.64);
         doors_and_windows[3].setRecommend_cots("2-3");
 
@@ -345,7 +345,7 @@ public class Statics {
         exterior[0].setImage_id(R.drawable.image6);
         exterior[0].setSquare_feet(151);
         exterior[0].setMetre_square(14);
-        exterior[0].setP_p_liter(2833);
+        exterior[0].setPrice(2506);
         exterior[0].setLiter(4);
         exterior[0].setRecommend_cots("2-3");
 
@@ -353,7 +353,7 @@ public class Statics {
         exterior[2].setImage_id(R.drawable.image14);
         exterior[2].setSquare_feet(13);
         exterior[2].setMetre_square(1.25);
-        exterior[2].setP_p_liter(3570);
+        exterior[2].setPrice(3721);
         exterior[2].setLiter(20);
         exterior[2].setRecommend_cots("1");
 
@@ -361,7 +361,7 @@ public class Statics {
         exterior[1].setImage_id(R.drawable.image15);
         exterior[1].setSquare_feet(16);
         exterior[1].setMetre_square(1.5);
-        exterior[1].setP_p_liter(4000);
+        exterior[1].setPrice(4806);
         exterior[1].setLiter(20);
         exterior[1].setRecommend_cots("1");
 
@@ -374,7 +374,7 @@ public class Statics {
         wood_finishes[0].setImage_id(R.drawable.image18);
         wood_finishes[0].setSquare_feet(118);
         wood_finishes[0].setMetre_square(11);
-        wood_finishes[0].setP_p_liter(789);
+        wood_finishes[0].setPrice(821);
         wood_finishes[0].setLiter(0.91);
         wood_finishes[0].setRecommend_cots("2-3");
 
@@ -382,7 +382,7 @@ public class Statics {
         wood_finishes[1].setImage_id(R.drawable.image18);
         wood_finishes[1].setSquare_feet(118);
         wood_finishes[1].setMetre_square(11);
-        wood_finishes[1].setP_p_liter(2285);
+        wood_finishes[1].setPrice(2195);
         wood_finishes[1].setLiter(3.64);
         wood_finishes[1].setRecommend_cots("2-3");
 
@@ -390,7 +390,7 @@ public class Statics {
         wood_finishes[2].setImage_id(R.drawable.image18);
         wood_finishes[2].setSquare_feet(118);
         wood_finishes[2].setMetre_square(11);
-        wood_finishes[2].setP_p_liter(2315);
+        wood_finishes[2].setPrice(2238);
         wood_finishes[2].setLiter(3.64);
         wood_finishes[2].setRecommend_cots("2-3");
 
@@ -398,7 +398,7 @@ public class Statics {
         wood_finishes[3].setImage_id(R.drawable.image18);
         wood_finishes[3].setSquare_feet(118);
         wood_finishes[3].setMetre_square(11);
-        wood_finishes[3].setP_p_liter(2363);
+        wood_finishes[3].setPrice(2148);
         wood_finishes[3].setLiter(3.64);
         wood_finishes[3].setRecommend_cots("2-3");
 
@@ -453,21 +453,19 @@ public class Statics {
         Result = "" + (float) round(c, 2);
     }
 
-    public static void Doors(int a) {
+    private static void Doors(int a) {
 
         double c = round((((round(Double.valueOf(width), 2) * round(Double.valueOf(length), 2) * Integer.parseInt(window_door) * 2)) / paint.getMetre_square()), 2) * Integer.parseInt(coats);
         Result = "" + (float) round(c, 2);
         ;
     }
 
-    public static void Windows(int a) {
+    private static void Windows(int a) {
         double c = round((((round(Double.valueOf(width), 2) * round(Double.valueOf(length), 2) * Integer.parseInt(window_door))) / paint.getMetre_square()), 2) * Integer.parseInt(coats);
         Result = "" + (float) round(c, 2);
-        ;
-
     }
 
-    public static void celing(int a) {
+    private static void celing(int a) {
 
         double c = round((((round(Double.valueOf(width), 2) * round(Double.valueOf(length), 2))) / paint.getMetre_square()), 2) * Integer.parseInt(coats);
         Result = "" + (float) round(c, 2);
@@ -477,23 +475,18 @@ public class Statics {
      * value Round off
      */
 
-    public static double round(double value, int places) {
-
+    private static double round(double value, int places) {
         return Double.valueOf(String.format("%." + places + "f", value));
-
     }
 
     /*
     * Calculate the price of paint
     * */
     public static void price_of_paint() {
-
-        double d = (Double.valueOf(paint.getP_p_liter()) / Double.valueOf(paint.getLiter()));
+        double d = paint.getPrice() / paint.getLiter();
         d = round(d, 0);
         d = d * round(Double.valueOf(Result), 0);
         paint_price = "" + d;
-
-
     }
 
     /*
@@ -501,7 +494,7 @@ public class Statics {
 * */
     public static void price_of_s_f() {
 
-        Double d = (Double.valueOf(paint.getP_p_liter()) / Double.valueOf(paint.getLiter())) / Double.valueOf(paint.getSquare_feet());
+        Double d = (Double.valueOf(paint.getPrice()) / Double.valueOf(paint.getLiter())) / Double.valueOf(paint.getSquare_feet());
         paint_price_s_f = "" + round(d, 2);
 
     }
@@ -511,7 +504,7 @@ public class Statics {
 * */
     public static void price_of_s_m() {
 
-        Double d = (Double.valueOf(paint.getP_p_liter()) / Double.valueOf(paint.getLiter())) / Double.valueOf(paint.getMetre_square());
+        Double d = (Double.valueOf(paint.getPrice()) / Double.valueOf(paint.getLiter())) / Double.valueOf(paint.getMetre_square());
         paint_price_s_m = "" + round(d, 2);
 
     }
